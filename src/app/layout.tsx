@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -40,7 +41,124 @@ export default function RootLayout({
 
     {/*Template Stylesheet */}
     <link href="css/style.css" rel="stylesheet"></link>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      <div className="container-fluid bg-light p-0">
+        <div className="row gx-0 d-none d-lg-flex">
+            <div className="col-lg-7 px-5 text-start">
+                <Link href="https://goo.gl/maps/HYW4PTEWDDaF8y7C9" className="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small className="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>Jalan Pacar No. 2A Surabaya</small>
+                </Link>
+            </div>
+            <div className="col-lg-5 px-5 text-end">
+                <Link href="https://wa.me/6285899731884" className="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small className="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+62 (858) 99731884</small>
+                </Link>
+                <div className="h-100 d-inline-flex align-items-center">
+                    <Link className="btn btn-sm-square bg-white text-primary me-1" href="https://facebook.com"><i className="fab fa-facebook-f"></i></Link>
+                    <Link className="btn btn-sm-square bg-white text-primary me-1" href="https://twitter.com"><i className="fab fa-twitter"></i></Link>
+                    <Link className="btn btn-sm-square bg-white text-primary me-1" href="https://linkedin.com"><i className="fab fa-linkedin-in"></i></Link>
+                    <Link className="btn btn-sm-square bg-white text-primary me-0" href="https://instagram.com"><i className="fab fa-instagram"></i></Link>
+                </div>
+            </div>
+        </div>
+      </div>
+      <nav className="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <Link href="/" className="navbar-brand d-flex align-items-center px-4 px-lg-5">
+          <img className="" src="/lambangGaweGawe.jpg" alt="Image"/>
+        </Link>
+        <button type="button" className="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarCollapse">
+            <div className="navbar-nav m-auto p-4 p-lg-0 ">
+                <Link href="/" className="nav-item nav-link active">Home</Link>
+                <div className="nav-item dropdown">
+                    <Link href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tentang Kami</Link>
+                    <div className="dropdown-menu fade-up m-0">
+                        <Link href="/tentang" className="dropdown-item">Tentang Kami</Link>
+                        <Link href="/tanya" className="dropdown-item">Tanya</Link>
+                        <Link href="/karir" className="dropdown-item">Karir</Link>
+                        <Link href="/kebijakan" className="dropdown-item">Kebijakan</Link>
+                    </div>
+                </div>
+                <Link href="/produk" className="nav-item nav-link">Produk</Link>
+                <Link href="/layanan" className="nav-item nav-link">Layanan</Link>
+                <Link href="/blog" className="nav-item nav-link">Blog</Link>
+                <Link href="/kontak" className="nav-item nav-link">Kontak</Link>
+            </div>
+            <Link href="/masuk" className="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Masuk<i className="fa fa-arrow-right ms-3"></i></Link>
+        </div>
+    </nav>
+        {children}
+        {/*Footer Start */}
+    <div className="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div className="container py-5">
+            <div className="row g-5">
+                <div className="col-lg-3 col-md-6">
+                    <h4 className="text-light mb-4">Alamat</h4>
+                    <Link href="https://goo.gl/maps/HYW4PTEWDDaF8y7C9"className="mb-2"><p><i className="fa fa-map-marker-alt me-3"></i>Jl. Pacar No. 2a Surabaya</p></Link>
+                    <Link href="https://wa.me/6285899731884" className="mb-2"><p><i className="fa fa-phone-alt me-3"></i>+62 (858)99731884</p></Link>
+                    <Link href="/kontak"><p className="mb-2"><i className="fa fa-envelope me-3"></i>emailgawe@gmail.com</p></Link>
+                    <div className="d-flex pt-2">
+                        <Link className="btn btn-outline-light btn-social" href="https://facebook.com"><i className="fab fa-twitter"></i></Link>
+                        <Link className="btn btn-outline-light btn-social" href="https://twitter.com"><i className="fab fa-facebook-f"></i></Link>
+                        <Link className="btn btn-outline-light btn-social" href="https://linkedin.com"><i className="fab fa-youtube"></i></Link>
+                        <Link className="btn btn-outline-light btn-social" href="https://instagram.com"><i className="fab fa-linkedin-in"></i></Link>
+                    </div>
+                </div>
+                <div className="col-lg-3 col-md-6">
+                    <h4 className="text-light mb-4">Jam Operasional</h4>
+                    <h6 className="text-light">Senin - Jum'at:</h6>
+                    <p className="mb-4">09.00 - 17.00</p>
+                </div>
+                <div className="col-lg-3 col-md-6">
+                    <h4 className="text-light mb-4">Menu</h4>
+                    <Link className="btn btn-link" href="/tentang">Tentang Kami</Link>
+                    <Link className="btn btn-link" href="/produk">Produk</Link>
+                    <Link className="btn btn-link" href="/layanan">Layanan</Link>
+                    <Link className="btn btn-link" href="/kebijakan">Kebijakan</Link>
+                    <Link className="btn btn-link" href="/kontak">Kontak</Link>
+                </div>
+                <div className="col-lg-3 col-md-6">
+                    <h4 className="text-light mb-4">Berlangganan</h4>
+                    <p>Jadilah partner kami dan dapatkan penawaran khusus dari kami</p>
+                    <div className="position-relative mx-auto" style={{maxWidth: '400px'}}>
+                        <input className="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email"/>
+                        <button type="button" className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Berlangganan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className="container">
+            <div className="copyright">
+                <div className="row">
+                    <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <Link className="border-bottom" href="/">PT. Gawe Gawe Solusi Teknologi</Link>, All Right Reserved.                        
+                        Designed By <Link className="border-bottom" href="#">Inria</Link>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {/*Footer End */}
+
+
+    {/*Back to Top */}
+    <Link href="#" className="btn btn-lg btn-primary btn-lg-square back-to-top"><i className="bi bi-arrow-up"></i></Link>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="js/main.js"></script>
+      </body>
 
     
     </html>
