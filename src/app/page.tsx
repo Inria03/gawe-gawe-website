@@ -96,6 +96,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <Link href="/layanan"><p className="text-primary text-end">Selengkapnya<i className="fa fa-arrow-right mx-2"></i></p></Link>
         </div>
     </div>
     {/*Service End */}
@@ -223,7 +224,7 @@ export default function Home() {
                                         <option value="3">Service 3</option>
                                     </select>
                                 </div>
-                                <div className="col-12 col-sm-6">
+                                <div className="col-12 col-sm-6" style={{ position:'relative' }}>
                                     <div className="date" id="date1" data-target-input="nearest">
                                         <input type="text"
                                             className="form-control border-0 datetimepicker-input"
@@ -336,11 +337,11 @@ export default function Home() {
                 <span className="visually-hidden">Previous</span>
             </button>
             <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
+                <i className="fa fa-arrow-right mx-2"></i>
             </button>
             </div>
         </div>
+        <Link href="/tentang"><p className="text-primary text-end">Selengkapnya<i className="fa fa-arrow-right mx-2"></i></p></Link>
     </div>
     {/*Testimonial End */}
 
@@ -358,12 +359,10 @@ export default function Home() {
                                 <p className="display-30">Exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
                                 <div className="meta meta-style2">
                                     <ul>
-                                        <li><a href="#!"><i className="fas fa-calendar-alt"></i> 10 Jul, <script>document.write(new Date().getFullYear())</script>2022</a></li>
-                                        <li><a href="#!"><i className="fas fa-user"></i> User</a></li>
-                                        <li><a href="#!"><i className="fas fa-comments"></i> 38</a></li>
+                                        <li><p className="text-primary"><i className="fas fa-calendar-alt"></i> 10 Jul, <script>document.write(new Date().getFullYear())</script>2022</p></li>
+                                        <li><p className="text-primary"><i className="fas fa-user"></i> User</p></li>
                                     </ul>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -375,60 +374,8 @@ export default function Home() {
                                 <p className="display-30">Exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
                                 <div className="meta meta-style2">
                                     <ul>
-                                        <li><a href="#!"><i className="fas fa-calendar-alt"></i> 25 Jun, <script>document.write(new Date().getFullYear())</script>2022</a></li>
-                                        <li><a href="#!"><i className="fas fa-user"></i> User</a></li>
-                                        <li><a href="#!"><i className="fas fa-comments"></i> 68</a></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-6 col-lg-4 mt-5 wow fadeInUp" data-wow-delay=".6s" style={{ visibility: "visible", animationDelay: "0.4s", animationName: "fadeInUp" }}>
-                        <div className="blog-grid">
-                            <div className="blog-grid-img position-relative"><img alt="img" src="/bg.jpg"/></div>
-                            <div className="blog-grid-text p-4">
-                                <h3 className="h5 mb-3"><a href="#!">Business people success master plan</a></h3>
-                                <p className="display-30">Exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                                <div className="meta meta-style2">
-                                    <ul>
-                                        <li><a href="#!"><i className="fas fa-calendar-alt"></i> 16 May, <script>document.write(new Date().getFullYear())</script>2022</a></li>
-                                        <li><a href="#!"><i className="fas fa-user"></i> User</a></li>
-                                        <li><a href="#!"><i className="fas fa-comments"></i> 58</a></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-6 col-lg-4 mt-5 wow fadeInUp" data-wow-delay=".8s" style={{ visibility: "visible", animationDelay: "0.8s", animationName: "fadeInUp" }}>
-                        <div className="blog-grid">
-                            <div className="blog-grid-img position-relative"><img alt="img" src="/bg.jpg"/></div>
-                            <div className="blog-grid-text p-4">
-                                <h3 className="h5 mb-3"><a href="#!">Results professional report</a></h3>
-                                <p className="display-30">Exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                                <div className="meta meta-style2">
-                                    <ul>
-                                        <li><a href="#!"><i className="fas fa-calendar-alt"></i> 02 Apr, <script>document.write(new Date().getFullYear())</script>2022</a></li>
-                                        <li><a href="#!"><i className="fas fa-user"></i> User</a></li>
-                                        <li><a href="#!"><i className="fas fa-comments"></i> 38</a></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-6 col-lg-4 mt-5 wow fadeInUp" data-wow-delay="1s" style={{ visibility: "visible", animationDelay: "1s", animationName: "fadeInUp" }}>
-                        <div className="blog-grid">
-                            <div className="blog-grid-img position-relative"><img alt="img" src="/bg.jpg"/></div>
-                            <div className="blog-grid-text p-4">
-                                <h3 className="h5 mb-3"><a href="#!">Business strategy concept</a></h3>
-                                <p className="display-30">Exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                                <div className="meta meta-style2">
-                                    <ul>
-                                        <li><a href="#!"><i className="fas fa-calendar-alt"></i> 25 Mar, <script>document.write(new Date().getFullYear())</script>2022</a></li>
-                                        <li><a href="#!"><i className="fas fa-user"></i> User</a></li>
-                                        <li><a href="#!"><i className="fas fa-comments"></i> 68</a></li>
+                                        <li><p className="text-primary"><i className="fas fa-calendar-alt"></i> 25 Jun, <script>document.write(new Date().getFullYear())</script>2022</p></li>
+                                        <li><p className="text-primary"><i className="fas fa-user"></i> User</p></li>
                                     </ul>
                                 </div>
 
@@ -443,28 +390,15 @@ export default function Home() {
                                 <p className="display-30">Exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
                                 <div className="meta meta-style2">
                                     <ul>
-                                        <li><a href="#!"><i className="fas fa-calendar-alt"></i> 10 Feb, <script>document.write(new Date().getFullYear())</script>2022</a></li>
-                                        <li><a href="#!"><i className="fas fa-user"></i> User</a></li>
-                                        <li><a href="#!"><i className="fas fa-comments"></i> 58</a></li>
+                                        <li><p className="text-primary"><i className="fas fa-calendar-alt"></i> 10 Feb, <script>document.write(new Date().getFullYear())</script>2022</p></li>
+                                        <li><p className="text-primary"><i className="fas fa-user"></i> User</p></li>
                                     </ul>
                                 </div>
 
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="row mt-6 wow fadeInUp" data-wow-delay=".6s" style={{ visibility: "visible", animationDelay: "0.6s", animationName: "fadeInUp" }}>
-                    <div className="col-12">
-                        <div className="pagination text-small text-uppercase text-extra-dark-gray">
-                            <ul>
-                                <li><a href="#!"><i className="fas fa-long-arrow-alt-left me-1 d-none d-sm-inline-block"></i> Prev</a></li>
-                                <li className="active"><a href="#!">1</a></li>
-                                <li><a href="#!">2</a></li>
-                                <li><a href="#!">3</a></li>
-                                <li><a href="#!">Next <i className="fas fa-long-arrow-alt-right ms-1 d-none d-sm-inline-block"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <Link href="/blog"><p className="text-primary text-end">Selengkapnya<i className="fa fa-arrow-right mx-2"></i></p></Link>
                 </div>
             </div>
     

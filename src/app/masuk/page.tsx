@@ -40,7 +40,7 @@ function Masuk() {
 
                             <div className="col">
                               {/*Simple link */}
-                              <a href="#!">Lupa Password?</a>
+                              <a href="/lupakonfirmasi">Lupa Password?</a>
                             </div>
                           </div>
                                 <div className="col-12">
@@ -48,7 +48,7 @@ function Masuk() {
                                 </div>
                           {/*Register buttons */}
                             <div className="text-center mt-5">
-                              <p>Belum Punya Akun? <a href="#!">Daftar</a></p>
+                              <p>Belum Punya Akun? <a href="/daftar">Daftar</a></p>
                               <p>Atau Masuk Dengan:</p>
                               <button type="button" className="btn btn-link btn-floating mx-1">
                                 <i className="fab fa-facebook-f"></i>

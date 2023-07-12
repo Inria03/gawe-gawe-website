@@ -9,7 +9,7 @@ function produk() {
         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 className="text-primary text-uppercase">SOROTAN</h6>
                 <h1 className="mb-5">Produk kami yang terbaru</h1>
-            </div>
+        </div>
             <div className="row g-4">
                 <Link href="/detailProduk" className="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
                 <img className="img-thumbnail" src="/rehidro.jpg" style={{objectFit: 'cover',height:'200px'}} alt=""/>
